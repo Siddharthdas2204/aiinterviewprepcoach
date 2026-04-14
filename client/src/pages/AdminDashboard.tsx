@@ -8,7 +8,8 @@ import {
   TrendingUp, 
   ShieldCheck,
   Search,
-  LogOut
+  LogOut,
+  ChevronRight
 } from "lucide-react";
 
 

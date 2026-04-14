@@ -40,6 +40,7 @@ export default function InterviewSession() {
   const { width, height } = useWindowSize();
 
   const [questions, setQuestions] = useState<Question[]>([]);
+  const [session, setSessionData] = useState<any>(null);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [userAnswer, setUserAnswer] = useState("");
   const [isEvaluating, setIsEvaluating] = useState(false);
