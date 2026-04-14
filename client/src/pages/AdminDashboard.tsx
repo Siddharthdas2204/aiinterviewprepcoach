@@ -1,19 +1,16 @@
 import { useEffect, useState } from "react";
 import { useAuthStore } from "../store/useAuthStore";
 import { ThemeToggle } from "../components/ThemeToggle";
-import { useNavigate, Navigate } from "react-router-dom";
+import { Navigate } from "react-router-dom";
 import { supabase } from "../lib/supabase";
 import { 
   Users, 
-  Settings, 
   TrendingUp, 
-  BarChart2, 
   ShieldCheck,
   Search,
-  ChevronRight,
   LogOut
 } from "lucide-react";
-import { motion } from "framer-motion";
+
 
 interface UserProfile {
   id: string;
@@ -28,7 +25,6 @@ interface UserProfile {
 
 export default function AdminDashboard() {
   const { profile, signOut } = useAuthStore();
-  const navigate = useNavigate();
 
   const [users, setUsers] = useState<UserProfile[]>([]);
   const [globalStats, setGlobalStats] = useState({

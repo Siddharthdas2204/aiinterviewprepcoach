@@ -1,12 +1,9 @@
 import { supabase } from "../lib/supabase";
 import { useAuthStore } from "../store/useAuthStore";
 import { 
-  User, 
   Mail, 
   LogOut, 
-  Shield, 
   Activity,
-  Calendar,
   Settings as SettingsIcon,
   Trash2,
   ChevronRight

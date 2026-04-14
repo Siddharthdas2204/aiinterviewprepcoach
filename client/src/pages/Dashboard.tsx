@@ -10,15 +10,13 @@ import {
   Home, 
   BarChart3, 
   PlusCircle, 
-  Bookmark, 
   User,
   ArrowRight,
   ShieldCheck,
   ChevronRight,
-  Clock,
-  Briefcase
+  Clock
 } from "lucide-react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import { ThemeToggle } from "../components/ThemeToggle";
 import { QuestionBank } from "../components/QuestionBank";
 import { ProfileSettings } from "../components/ProfileSettings";
@@ -260,14 +258,7 @@ function QuestionHistory({ recentSessions, navigate, onBack }: { recentSessions:
   );
 }
 
-function StatusCard({ label, value, color }: { label: string, value: any, color: string }) {
-  return (
-    <div className="glass p-8 rounded-[2.5rem] flex flex-col justify-center items-center text-center">
-       <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-2">{label}</p>
-       <p className={`text-6xl font-black ${color}`}>{value}</p>
-    </div>
-  );
-}
+
 
 function ServiceCard({ icon, title, desc, onClick }: { icon: any, title: string, desc: string, onClick: () => void }) {
   return (

@@ -8,7 +8,6 @@ import {
   MicOff, 
   Send, 
   Timer, 
-  ChevronRight, 
   CheckCircle2, 
   AlertCircle,
   Volume2,
@@ -50,7 +49,7 @@ export default function InterviewSession() {
   const [voiceEnabled, setVoiceEnabled] = useState(true);
   const [timer, setTimer] = useState(0);
   const [showConfetti, setShowConfetti] = useState(false);
-  const [sessionData, setSessionData] = useState<any>(null);
+
 
   const recognitionRef = useRef<any>(null);
   const timerRef = useRef<any>(null);

@@ -6,7 +6,6 @@ import AdminDashboard from "./pages/AdminDashboard";
 import Setup from "./pages/Setup";
 import InterviewSession from "./pages/InterviewSession";
 import SessionSummary from "./pages/SessionSummary";
-import { useEffect } from "react";
 import { Sparkles } from "lucide-react";
 import { ThemeProvider } from "./components/ThemeProvider";
 
@@ -25,7 +24,7 @@ const ProtectedRoute = ({ children }: { children: React.ReactNode }) => {
 };
 
 function App() {
-  const { user, loading } = useAuthStore();
+  const { loading } = useAuthStore();
 
   // Custom loading screen to prevent flash of unauthenticated content
   if (loading) {

@@ -8,7 +8,6 @@ import {
   ChevronRight, 
   MessageSquare, 
   Zap,
-  CheckCircle2,
   TrendingUp,
   Award
 } from "lucide-react";
